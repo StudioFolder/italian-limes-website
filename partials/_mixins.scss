@@ -35,14 +35,6 @@
     @include background('/images/publication.jpg');
 }
 
-.background-mountain {
-    @include background('/images/Italian limes mesh.png');
-}
-
-.background-zkm {
-    @include background('/images/zkm.jpg');
-}
-
 .background-alps {
     @include background('/images/alps.jpg');
 }
