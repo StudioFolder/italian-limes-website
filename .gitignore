@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editor / IDE state
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local Vercel state
+.vercel/
+
+# Node (defensive — none in this static repo, but in case)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Synology sync metadata
+.SynologyWorkingDirectory/
+@eaDir/
+
+# Orphan files awaiting manual deletion (not referenced anywhere in the site)
+# Safe to remove from disk once you've confirmed you don't want them.
+images/-alps.jpg
+images/alps 2.jpg
+images/archives.jpg
+images/sensor.jpg
+cgi-bin/
+

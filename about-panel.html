@@ -1,0 +1,312 @@
+<!-- Panel tab switching -->
+
+<script>
+
+    $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    });
+
+</script>
+
+<!-- Side About Panel -->
+
+<header class="panel-header">
+
+    <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1">About</li>
+        <li class="tab-link" data-tab="tab-2">Featured</li>
+        <li class="tab-link" data-tab="tab-3">Credits</li>
+        <li class="tab-link" data-tab="tab-4">Partners</li>
+        <li class="tab-link" data-tab="tab-5">Contact</li>
+    </ul>
+
+    <a href="#0" class="panel-close">Close</a>
+
+</header>
+
+<div class="panel-container">
+    <div class="panel-content">
+
+        <div id="tab-1" class="tab-content current">
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <p><h3>Italian Limes is a research project and an interactive installation that explores the most remote Alpine regions, where national borders drift with glaciers.</h3></p>
+
+                    <p>The project focuses on the effects of climate change on shrinking ice sheets and the consequent shifts of the watershed that defines the national territories of Italy, Austria, Switzerland and France.</p>
+
+                    <p>Investigating the fragile balance of the Alpine ecosystem, <em>Italian Limes</em> shows how natural frontiers are subject to the complexity of ecological and territorial processes—and that they depend on the technologies and norms that are used to represent them.</p>
+
+                    <p>The project explores the conditions of post-Schengen Europe, where borders are intended to fade away but are simultaneously claimed by governments as the ultimate defence of the nation state. A network of apparently dormant 19th-century frontiers has waken up from the dream of a borderless continent, and materialised into a 21st-century psychosis of police checks, barbed wire fences, migrant encampments, proxy sovereignties and displaced jurisdictions.</p>
+
+                    <p>Italian Limes aims to monitor the Austrian-Italian watershed as a case-study to look at relationship between borders and environmental change. 
+                    A grid of autonomous measurement units&mdash;installed at 3,300 m above sea level—tracks the evolution of the glacial watershed and broadcasts its data to a drawing machine, printing a real-time representation of the moving border across the Alps.</p>
+
+                    <figure class="pure-u-1">
+                    <img class="pure-img-responsive" src="images/project/installation-overview_01.jpg" alt="Italian Limes installation">
+                    <figcaption>Italian Limes installation at la Biennale di Venezia, 2014.</figcaption>
+                    </figure>
+
+                    <p>The project was originally commissioned as part of Monditalia, 14th International Architecture Exhibition, la Biennale di Venezia. It was further developed in 2016, through a joint scientific campaign with the <a href="http://www.glaciologia.it" target="_blank">Italian Glaciological Committee</a>, for the exhibition <a href="http://zkm.de/en/event/2016/04/globale-reset-modernity" target="_blank"><em>Reset Modernity!</em></a>, curated by Bruno Latour and the <a href="http://modesofexistence.org" target="_blank">AIME team</a> at <a href="http://on1.zkm.de/zkm/e" target="_blank">ZKM&mdash;Center for Art and Media</a>, in Karlsuhe, Germany.</p>
+
+                    <!--<p>Italian Limes is currently part of <a href="http://zkm.de/en/event/2016/04/globale-reset-modernity" target="_blank"><em>GLOBALE: Reset Modernity!</em></a>, an exhibition curated by the philosopher Bruno Latour and <a href="http://modesofexistence.org" target="_blank">AIME team</a> at <a href="http://on1.zkm.de/zkm/e">ZKM&mdash;Center for Art and Media</a>, in Karlsuhe, Germany (April 16th&mdash;August 21st, 2016).</p>-->
+
+                    <div class="panel-footer">
+                        <p>© Italian Limes 2016. All photos by <a href="http://www.delfinosl.it">Delfino Sisto Legnani.</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-2" class="tab-content">
+
+            <div class="pure-g">
+                <!--<div class="pure-u-1">
+                    <p><h3>Since its debut, the project has been highly acclaimed on traditional media and digital outlets.</h3></p>
+                </div>-->
+
+                <div class="pure-u-1">
+                    <div class="award-subtitle">
+                        <h4>Awards</h4>
+                    </div>
+                </div>
+
+                    <div class="award_row">
+                        <div class="award">
+                            <img src="/images/logos/logo-la-biennale-di-venezia-1.jpg" alt="The Venice Architecture Biennale Lion Logo">
+                            <h5>Special Mention</h5>
+                            <p>14th International Architecture Exhibition<br>la Biennale di Venezia
+                        </div>
+                        <div class="award">
+                            <img src="/images/logos/logo-eda-winner-gold.jpg" alt="The European Design Awards: Gold">
+                            <h5>Silver Winner</h5>
+                            <p>Exhibition Design category<br>
+                            European Design Awards 2015</p>
+                        </div>
+                    </div>
+
+                <div class="pure-u-1">
+                    <div class="award-subtitle">
+                        <h4>Exhibitions</h4>
+                    </div>
+                </div>
+
+                    <div class="award_row">
+                        <div class="award">
+                            <img src="/images/logos/logo-zkm.png" alt="ZKM Center for Art and Media logo">
+                            <h5>ZKM, Center for Art and Media</h5>
+                            <p>Karlsruhe, Germany<br>
+                            2016</p>
+                        </div>
+
+                        <div class="award">
+                            <img src="/images/logos/logo-VA.jpg" alt="The Victoria and Albert Museum logo">
+                            <h5>&#8220;All of This Belongs to You&#8221;</h5>
+                            <p>Victoria and Albert Museum, London<br>
+                            Part of the permanent collection</p>
+                        </div>
+                    </div>
+
+                    <div class="award_row">
+                        <div class="award">
+                            <img src="/images/logos/logo-museo-archeologico.jpg" alt="South Tyrol Museum of Archaeology logo">
+                            <h5>South Tyrol Museum of Archaeology</h5>
+                            <p>Bolzano, Italy<br>
+                            2015</p>
+                        </div>
+
+
+                        <div class="award">
+                            <img src="/images/logos/logo-la-biennale-di-venezia-1.jpg" alt="The Venice Architecture Biennale logo">
+                            <h5>La Biennale di Venezia</h5>
+                            <p>14th International Architecture Exhibition<br>
+                            2014</p>
+                        </div>
+                    </div>
+
+                <div class="pure-u-1">
+                    <div class="award-subtitle">
+                        <h4>Events</h4>
+                    </div>
+                </div>
+
+                <div class="award_row">
+                    <div class="award">
+                        <img src="/images/logos/logo-technarte.jpg" alt="Technarte logo">
+                        <h5>Selected project</h5>
+                        <p>Technarte, International Conference<br>
+                        on Art and Technology, Bilbao</p>
+                    </div>
+                </div>
+
+                <div class="panel-footer">
+                    <p>© Italian Limes 2016. All photos by <a href="http://www.delfinosl.it">Delfino Sisto Legnani.</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tab-3" class="tab-content">
+
+            <p><h3>Italian Limes is a project initiated and curated by <a href="http://www.studiofolder.it">Folder</a>, a design and research studio founded by Marco Ferrari and Elisa Pasqual.</h3></p>
+
+            <p><h3>Authors</h3></p>
+
+            <p><b>Folder</b> (Marco Ferrari, Elisa Pasqual, Alessandro Busi, Aaron Gillett)<br>
+            Research and design direction</p>
+
+            <p><b>Delfino Sisto Legnani</b><br>
+            Photography</p>
+
+            <p><b>Pietro Leoni</b><br>
+            Interaction design and engineering</p>
+
+            <p><b>Alessandro Mason</b><br>
+            Design and manufacturing</p>
+
+            <p><b>Angelo Semeraro</b><br>
+            Data processing and web development</p>
+
+            <p><b>Livia Shamir</b><br>
+            General coordination</p>
+
+            <h3>Scientific Coordination</h3>
+
+            <p><b>Prof. Aldino Bondesan</b><br>
+            Comitato Glaciologico Italiano, Dipartimento di Geoscienze, Università di Padova</p>
+
+            <p><b>Prof. Valter Maggi</b><br>
+            Comitato Glaciologico Italiano, EuroCold Lab, Dipartimento di Scienze della Terra, University of Milano–Bicocca</p>
+
+            <h3>Geophysical Surveying</h3>
+            <p><b>Prof. Roberto Francese</b><br>
+            Dipartimento di Fisica e Scienze della Terra, Università di Parma</p>
+
+            <p><b>Massimo Giorgi, Stefano Picotti</b><br>
+            Istituto Nazionale di Oceanografia e di Geofisica Sperimentale, Trieste</p>
+
+            <h3>Technical advice</h3>
+            <p><b>Claudio Indellicati</b><br>
+            Engineer</p>
+
+            <h3>Data handling support</h3>
+            <p><b>Studio Calibro</b> (Matteo Azzi, Giorgio Uboldi)</p>
+
+            <h3>Drone Footage</h3>
+            <p><b>Nicolò Cunico</b></p>
+
+            <h3>Patronage</h3>
+            <p><b>Provincia Autonoma Bolzano Alto Adige</b></p>
+
+            <h3>Acknowledgments</h3>
+            <p>Many people have supported the project since its beginning, helping and advising the team druing its different phases. First of all, our gratitude goes to <b>Rem Koolhaas</b>, <b>Ippolito Pestellini Laparelli</b>, <b>Fabrizia Vecchione</b> and the whole team of curators of <em>Monditalia</em>: Fundamentals, the 14th International Architecture Exhibition, la Biennale di Venezia.</p>
+
+            <p>We’d like to thank the personnel of the Istituto Geografico Militare, who introduced us the the complexity of border measurements and opened their archives. We're particularly grateful to <b>Simone Bartolini</b>, <b>Andrea Cantile</b>, <b>Renzo Masseroli</b> and <b>Salvatore Spatola</b>.</p>
+
+            <p>And also: <b>Daniele Belleri</b>, <b>Marco Cappelletti</b>, <b>Robert Ciatti</b> (Alpine guide, Passeier–Schnals), <b>Sergio Cingolani</b> (TIM), <b>David Colmano</b> (Cartografia provinciale e coordinamento geodati, Provincia Autonoma di Bolzano Alto Adige), <b>Marcello Comoglio</b> (The Room produzioni), <b>Francesco Feltrin</b>, <b>Angelika Fleckinger</b> (South Tyrol Museum of Archaeology), <b>Dawid Górny</b>, <b>Joseph Grima</b>, <b>Jörg Hölzl (Alpine guide)</b>, <b>Rory Hyde</b>, <b>Klat magazine</b>, <b>Gabriel Kostner</b> (Elikos), <b>Marco Kostner</b> (Elikos), <b>Kieran Long</b>, <b>Claudia Mainardi</b>, <b>Marina Mangiat</b>, <b>Paolo Priolo</b> (TIM), <b>Alex Rothera</b>, <b>Tamar Shafrir</b>, <b>Ben Vickers</b>.</p>
+
+            <div class="panel-footer">
+                <p>© Italian Limes 2016. All photos by <a href="http://www.delfinosl.it">Delfino Sisto Legnani.</a></p>
+            </div>
+
+        </div>
+
+        <div id="tab-4" class="tab-content">
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <p><h3></h3></p>
+                </div>
+
+                <div class="pure-u-1">
+                    <div class="award-subtitle">
+                        <h4>Scientific Partners</h4>
+                    </div>
+                </div>
+
+                <div class="award_row">
+                    <div class="award">
+                        <img src="/images/logos/logo-cgi.png" alt="The Italian Glaciological Committee logo">
+                        <a href="http://www.glaciologia.it"><p>The Italian Glaciological Committee</p></a>
+                    </div>
+                    <div class="award">
+                        <img src="/images/logos/logo-eurocold-lab.png" alt="European Cold Laboratory logo">
+                        <a href="http://geomatic.disat.unimib.it/home/valter/Eurocold"><p>European Cold Laboratory</p></a>
+                    </div>
+                    <div class="award">
+                        <img src="/images/logos/logo-ogs.png" alt="National Institute of Oceanography and Experimental Geophysics logo">
+                        <a href="http://www.ogs.trieste.it/en"><p>National Institute of Oceanography and Experimental Geophysics</p></a>
+                    </div>
+                </div>
+
+                <div class="pure-u-1">
+                    <div class="award-subtitle">
+                        <h4>Main Technical Partner</h4>
+                    </div>
+                </div>
+
+                    <div class="award_row">
+                        <div class="award">
+                            <img src="/images/logos/logo-tim.png" alt="TIM logo">
+                            <a href="http://www.tim.it"><p>TIM</p></a>
+                        </div>
+                    </div>
+
+                <div class="pure-u-1">
+                    <div class="award-subtitle">
+                        <h4>Technical Partners</h4>
+                    </div>
+                </div>
+
+                    <div class="award_row">
+                        <div class="award">
+                            <img src="/images/logos/logo-fablab-torino.png" alt="FabLab Torino logo">
+                            <a href="http://www.fablabtorino.org"><p>FabLab Torino</p></a>
+                        </div>
+                        <div class="award">
+                            <img src="/images/logos/logo-litografia-artistica-cartografica.png" alt="Litografia Artistica Cartografica logo">
+                            <a href="http://www.lac-cartografia.it"><p>Litografia Artistica Cartografica</p></a>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <p>© Italian Limes 2016. All photos by <a href="http://www.delfinosl.it">Delfino Sisto Legnani.</a></p>
+                    </div>
+
+            </div>
+        </div>
+
+        <div id="tab-5" class="tab-content">
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <p><h3>Please get in touch for additional information.</h3></p>
+
+                    <p><b>General inquiries</b><br>
+                    Italian Limes<br>
+                    <a href="mailto:info@italianlimes.net?Subject=Ciao" target="_top">info@italianlimes.net</a></p>
+
+                    <p><b>Interview requests</b><br>
+                    Marco Ferrari<br>
+                    <a href="mailto:marco@studiofolder.it" target="_top">marco@studiofolder.it</a></p>
+
+                    <p><b>Press inquiries</b><br>
+                    Livia Shamir<br>
+                    <a href="mailto:livia@italianlimes.net?Subject=Ciao" target="_top">livia@italianlimes.net</a></p>
+
+                    <p><h3>Follow us on <a href="https://twitter.com/it_limes" target="_blank">Twitter</a> and <a href="https://www.facebook.com/italianlimes/" target="_blank">Facebook</a>.</h3></p>
+
+                    <div class="panel-footer">
+                        <p>© Italian Limes 2016. All photos by <a href="http://www.delfinosl.it">Delfino Sisto Legnani.</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- panel-content -->
+</div> <!-- panel-container -->
